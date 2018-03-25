@@ -6,6 +6,7 @@
 #include <QMediaPlayer>
 #include <QMediaPlaylist>
 #include <QPushButton>
+#include <QToolButton>
 #include <QVBoxLayout>
 #include <QHBoxLayout>
 #include <QFileDialog>
@@ -30,18 +31,8 @@ private:
     QMediaPlayer *m_player;
     QMediaPlaylist *m_playlist;
 
-
-    QTableView *m_playlistview;
     //***********************************************************************************
-    QPushButton *m_pushbutton_play;
-    QPushButton *m_pushbutton_stop;
-    QPushButton *m_pushbutton_next;
-    QPushButton *m_pushbutton_prvw;
 
-    QPushButton *m_pushbutton_add;
-
-    QHBoxLayout *m_hlayout;
-    QVBoxLayout *m_vlayout;
 private slots:
     void on_btn_add_clicked();
 };
